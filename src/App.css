@@ -1,0 +1,74 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+}
+
+.Main {
+  width: 90%;
+  margin: auto;
+  height: 80%;
+  background-color: pink;
+}
+
+.Main h1 {
+  text-align: center;
+}
+
+.TabContainer {
+  flex: 1;
+  height: 100%;
+}
+
+.TabContainer .Buttons {
+  display: flex;
+  flex-direction: row;
+  background-color: green;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.TabContainer button {
+  background-color: aqua;
+  border: 2px solid blue;
+  color: blue;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.TabContainer .Panel {
+  height: 100%;
+}
+
+.TabPanel {
+  display: flex;
+  height: 80%;
+  background-color: red;
+  align-items: stretch;
+}
+
+.GameContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+}
+
+.GameContainer .GameInfoTab {
+  background-color: blue;
+  flex: 1;
+}
+
+.GameContainer .PhaserContainer {
+  width: 800px;
+  align-self: center;
+}
+
+.GameContainer .ChatTab {
+  background-color: blue;
+  flex: 1;
+}
