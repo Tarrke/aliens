@@ -9,19 +9,19 @@ import GameContainer from '../Components/GameContainer'
 const tabData = [
     {
         name: 'Tab1',
-        content: () => {return (<PlayerInfo />);},
+        content: () => { return (<PlayerInfo />); },
     },
     {
         name: 'Tab2',
-        content: () => {return (<GameContainer />);},
+        content: () => { return (<GameContainer />); },
     },
     {
         name: 'Tab3',
-        content: () => { return 'Tab 3 content';},
+        content: () => { return 'Tab 3 content'; },
     },
     {
         name: 'Tab4',
-        content: () => { return 'Tab 4 content';},
+        content: () => { return 'Tab 4 content'; },
     },
 ];
 

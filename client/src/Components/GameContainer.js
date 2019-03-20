@@ -8,7 +8,7 @@ export default class GameContainer extends Component {
         super(props);
         this.state = {
             info: "dummy Info",
-            chat_data: {},
+            chat_data: [],
         }
     }
 
