@@ -58,7 +58,7 @@
   width: 100%;
 }
 
-.GameContainer .GameInfoTab {
+.GameContainer .PlayerInfo {
   background-color: blue;
   flex: 1;
 }
@@ -71,4 +71,12 @@
 .GameContainer .ChatTab {
   background-color: blue;
   flex: 1;
+}
+
+.ChatTab {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+  justify-content: flex-end;
 }
