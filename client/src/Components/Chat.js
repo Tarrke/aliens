@@ -4,6 +4,8 @@ export default class Chat extends Component {
     constructor(props) {
         super(props);
 
+        this.intervalId = 0;
+
         this.state = {
             data: [],
             input_value: "",
@@ -15,12 +17,18 @@ export default class Chat extends Component {
     }
 
     componentDidMount() {
-        setInterval(this.handleChat, 5000);
+        console.log('Chat did mount');
+        this.intervalId = setInterval(this.handleChat, 5000);
+    }
+
+    componentWillUnmount() {
+        console.log('Chat will unmount');
+        clearInterval(this.intervalId);
     }
 
     handleSubmit(event) {
         console.log("Chat text submit: ", event);
-        this.handleChat()
+        // this.handleChat();
     }
 
     handleChatInputChange(event) {
