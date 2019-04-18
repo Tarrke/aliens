@@ -1,6 +1,6 @@
 # aliens
 
-A simple js game
+A simple js game  
 
 ## Dev notes
 $ npx create-react-app aliens
